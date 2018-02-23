@@ -8,7 +8,7 @@ export default {
     {
       title: 'WE UNEARTH DESIGN',
       subTitle: '',
-      url: 'p4.png'
+      url: 'p5.jpg'
     }
   ]
 }
