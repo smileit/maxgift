@@ -8,7 +8,7 @@ import Fatories from './fatory-pic';
 class WhatWeOffer extends Component {
   render() {
     return (
-      <div>
+      <div className='what-we-offer'>
         <Products />
         <Expertise />
         <Fatories />

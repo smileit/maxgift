@@ -1,18 +1,25 @@
 .menu-part {
   text-align: center;
   height: 95px;
-  padding: 0 15px;
+  padding: 0 30px;
   font-size: 12px;
 
   .logo {
     width: 200px;
+    text-align: left;
   }
   .item {
     padding-left: 15px;
     line-height: 95px;
+    font-size: 13px;
+    cursor: pointer;
+    &:hover {
+      color: @mainCl;
+    }
   }
   .email {
     padding: 0 15px;
+    width: 150px;
     text-align: right;
   }
 }

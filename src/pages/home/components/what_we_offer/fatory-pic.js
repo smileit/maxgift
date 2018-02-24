@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import config from './config'
 
 class Fatories extends Component {
   render() {
     return (
-      <div>
-        Fatories
+      <div className='factory-pics frw aic jcc'>
+        {
+          config.fatoryPics.map(p => <img key={p.src} src={`/img/${p.url}`} />)
+        }
       </div>
     );
   }

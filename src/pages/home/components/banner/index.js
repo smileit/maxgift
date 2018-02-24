@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick'
 import config from './config'
-import './style.less'
-
 
 class Banner extends Component {
   render() {
@@ -11,12 +9,13 @@ class Banner extends Component {
       infinite: true,
       speed: 500,
       autoplay: true,
+      arrows: false,
       slidesToShow: 1,
       slidesToScroll: 1
     };
     return (
       <div className='banner-part'>
-        <Slider {...settings} arrows>
+        <Slider autoplay {...settings}>
           {
             config.items.map(item => <div className='item'>
               <img src={`./img/${item.url}`} />
