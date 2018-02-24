@@ -8,7 +8,7 @@ class WhoWeare extends Component {
       <div className='who-we-are bg'>
         <div className='top-text df aic jcc'>
             <span className='line'/>
-            <span className='text'>who we are</span>
+            <span className='text'>WHO WE ARE</span>
             <span className='line'/>            
           </div>
         <h1 className='title main-cl'>{config.title}</h1>
