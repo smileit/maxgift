@@ -11,7 +11,7 @@ import WhoWeServe from './components/who_we_serve'
 class Home extends Component {
   render() {
     return (
-      <div className='main-cl'>
+      <div className='text-cl'>
        <Menu />
        <Banner />
        <WhoWeAre />

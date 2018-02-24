@@ -1,3 +1,83 @@
 .who-we-serve-part {
-  color: #fff;
+  background-color: #ddd;
+  padding-top: 100px;
+
+  .label-part {
+    color: @textCl;
+    .line {
+      width: 70px;
+      height: 2px;
+      background-color: @textCl;
+      margin: 0 30px;
+    }
+    .text {
+      font-size: 22px;
+      line-height: 50px;
+    }
+  }
+  .client-part {
+    padding: 0 50px 100px;
+
+    & > .title {
+      text-align: center;
+      width: 50vw;
+      margin:0 auto;
+      font-size: 42px;
+      padding: 40px 0;
+    }
+    .item {
+      width: 28%;
+      margin: 0 3%;
+      & > img {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+      }
+      .title {
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        padding-top: 30px;
+        padding-bottom: 20px;
+      }
+      .text {
+        line-height: 2;
+      }
+    }
+  }
+  .comments {
+    .slick-dots li button:before {
+      color: #fff;
+    }
+    .slick-dots li.slick-active button:before {
+      color: #fff;
+    }
+    background-color: @mainCl;
+    padding: 50px;
+    color: #fff;
+    & > .title {
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 42px;
+    }
+    .comment-block {
+      height: 300px;
+      padding: 0 50px;
+      text-align: center;
+      .text {
+        line-height: 40px;
+        font-size: 25px;
+        display: block;
+        margin-top: 50px;
+        margin-bottom: 30px;
+
+      }
+      .name {
+        font-size: 22px;
+        font-weight: bold;
+      }
+    }
+  }
+
 }
