@@ -8,12 +8,13 @@ class Banner extends Component {
       dots: true,
       infinite: true,
       speed: 500,
+      arrows: false,
       slidesToShow: 1,
       slidesToScroll: 1
     };
     return (
       <div className='banner-part'>
-        <Slider {...settings} arrows>
+        <Slider autoplay {...settings}>
           {
             config.items.map(item => <div className='item'>
               <img src={`./img/${item.url}`} />
