@@ -1,5 +1,6 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
+@import './pages/home/style.less';
 
 @mainCl: #66addf;
 @textCl: #4c4845;
@@ -21,10 +22,20 @@
 
 
 
+.rel {
+  position: relative;
+}
 
+.abs {
+  position: absolute;
+}
 
-.df {
+.df, .frw {
   display: flex;
+}
+
+.frw {
+  flex-wrap: wrap;
 }
 
 .fx1 {
@@ -39,8 +50,15 @@
   justify-content: center;
 }
 
+.jcr {
+  justify-content: space-around;
+}
+
 .w-max {
   width: 100%;
+}
+.h-max {
+  height: 100%;
 }
 
 .ww {

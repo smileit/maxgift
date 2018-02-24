@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick'
 import config from './config'
-import './style.less'
-
 
 class Banner extends Component {
   render() {
