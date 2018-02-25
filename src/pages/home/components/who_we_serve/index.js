@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick'
+import TitleBlock from '../title_block'
 import config from './config'
 
 class WhoWeServe extends Component {
@@ -15,11 +16,7 @@ class WhoWeServe extends Component {
     };
     return (
       <div className='who-we-serve-part'>
-        <div className='label-part df aic jcc'>
-          <span className='line'/>
-          <span className='text'>WHO WE SERVE</span>
-          <span className='line'/>          
-        </div>
+        <TitleBlock title='WHO WE SERVE' />
         <div className='client-part'>
           <h1 className='main-cl title'>WE MEET THE UNIQUE NEEDS OF UNIQUE CUSTOMERS</h1>
           <div className='list df aic jcc'>
