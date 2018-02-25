@@ -18,7 +18,9 @@ class Menu extends Component {
               {m.text}
             </div>)
         }
-        <div className='email main-cl'>Email</div>
+        <div className='email main-cl'>
+        <a href="mailto:sales1@fuson.cc">Email US</a>
+        </div>
       </div>
     );
   }
