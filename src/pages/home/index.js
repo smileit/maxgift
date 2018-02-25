@@ -27,13 +27,16 @@ class Home extends Component {
     }, 1000)
   }
   scrollTo (position) {
-    const page = document.getElementsByTagName('body')[0]
-    const scrollHeight = position - page.scrollTop
+    console.log(position)
+    const page = document.getElementsByTagName('html')[0]
+    const body = document.getElementsByTagName('body')[0]
+    const scrollHeight = position - (page.scrollTop || body.scrollTop)
     let tick = 5
     let timer = () => setTimeout(() => {
       if (!tick) return
       tick = tick - 1
-      page.scrollTop = tick ? page.scrollTop + scrollHeight / 5 : position
+      body.scrollTop = page.scrollTop = tick ? page.scrollTop + (scrollHeight / 5) : position
+      console.log(page, scrollHeight)
       timer()
     }, 30)
     timer()
