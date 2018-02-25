@@ -21,7 +21,7 @@ class Footer extends Component {
           </div>
           <div className='go-top' onClick={this.props.onGoTop}>TOP<span className='arrow-top' /></div>
         </div>
-        <div className='copy-right'>© 2018 Formation, Inc. All rights reserved.</div>
+        <div className='copy-right'>© 2018 Maxgift, Inc. All rights reserved.</div>
       </div>
     );
   }
