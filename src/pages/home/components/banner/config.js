@@ -1,19 +1,19 @@
 export default {
   items : [
     {
-      title: 'WE UNEARTH DESIGN',
-      subTitle: '',
-      url: 'p5.jpg'
-    },
-    {
-      title: 'WE UNEARTH DESIGN',
+      title: 'ALL FASION WE DESIGN',
       subTitle: '',
       url: 'p4.png'
     },
     {
-      title: 'WE UNEARTH DESIGN',
+      title: 'ALL FASION WE DESIGN',
       subTitle: '',
       url: 'p5.jpg'
+    },
+    {
+      title: 'ALL FASION WE DESIGN',
+      subTitle: '',
+      url: 'p4.png'
     }
   ]
 }

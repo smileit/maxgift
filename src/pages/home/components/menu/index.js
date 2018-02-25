@@ -19,7 +19,7 @@ class Menu extends Component {
             </div>)
         }
         <div className='email main-cl'>
-        <a href="mailto:sales1@fuson.cc?subject=I have a enquery" className='email main-cl'>Email us</a>
+        <a href="mailto:sales@maxgiftexporter.com?subject=I have a Enquery" className='email main-cl'>Email us</a>
         </div>
       </div>
     );
