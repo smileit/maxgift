@@ -1,5 +1,5 @@
 import Home from './pages/home'
-import P1 from './pages/p1'
+import Detail from './pages/detail'
 const routes = [
   {
     Cmp: Home,
@@ -7,9 +7,9 @@ const routes = [
     path: '/'
   },
   {
-    Cmp: P1,
-    name: 'p1',
-    path: '/p1'
+    Cmp: Detail,
+    name: 'detail',
+    path: '/detail/:id?'
   }
 ]
 export default routes

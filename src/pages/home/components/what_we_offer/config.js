@@ -2,34 +2,42 @@ export default {
   productText: 'Contemporary, rustic, elegant, or whimsical—whatever your artistic vision may be, we have the medium to bring it to life. We carry only the finest natural stone and tile lines, each with a character all its own.',
   productList: [
     {
+      id: 'p001',
       text: 'non woven bag',
       pic: 'p1.jpg'
     },
     {
+      id: 'p001',
       text: 'pp woven bag',
       pic: 'p2.jpg'
     },
     {
+      id: 'p001',
       text: 'pp non woven bag',
       pic: 'p1.jpg'
     },
     {
+      id: 'p001',
       text: 'cooler bag',
       pic: 'p2.jpg'
     },
     {
+      id: 'p001',
       text: 'shoulder bag',
       pic: 'p2.jpg'
     },
     {
+      id: 'p001',
       text: 'PET bag',
       pic: 'p1.jpg'
     },
     {
+      id: 'p001',
       text: 'Drawstring bag',
       pic: 'p1.jpg'
     },
     {
+      id: 'p001',
       text: 'ice bag',
       pic: 'p1.jpg'
     }

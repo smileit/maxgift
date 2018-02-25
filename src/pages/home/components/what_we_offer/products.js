@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 import TitleBlock from '../title_block'
 import config from './config'
+import { openWindow } from '../../../../utils'
 
 class Products extends Component {
+  onItemClick(id) {
+    if(!id) return
+    openWindow(`/detail/${id}`)
+
+  }
   render() {
     return (
       <div className='products-part'>
@@ -13,7 +19,9 @@ class Products extends Component {
           {
             config.productList.map((p, idx) => <div key={idx} className='item rel'>
               <img src={`/img/${p.pic}`} />
-              <div className='cover abs w-max h-max df aic'><div className='fx1'>{p.text}</div></div>
+              <div className='cover abs w-max h-max df aic' onClick={() => this.onItemClick(p.id)}>
+                <div className='fx1'>{p.text}</div>
+              </div>
             </div>)
           }
         </div>
