@@ -7,12 +7,15 @@ import Footer from './components/footer'
 import WhatWeOffer from './components/what_we_offer'
 import WhoWeAre from './components/who_we_are'
 import WhoWeServe from './components/who_we_serve'
+import CONSTS from './consts'
+
+const { MENU, BANNER, WHO_WE_ARE, WHAT_WE_OFFER, WHO_WE_SERVE, FOOTER } = CONSTS.SECTION
 
 
 class Home extends Component {
   constructor (props) {
     super(props)
-    this.sections = ['menu', 'banner', 'whoWeAre', 'whatWeOffer', 'whoWeServe', 'footer']
+    this.sections = [MENU, BANNER, WHO_WE_ARE, WHAT_WE_OFFER, WHO_WE_SERVE, FOOTER]
     this.positionInfo = {}
   }
   componentDidMount () {
@@ -38,12 +41,12 @@ class Home extends Component {
   render() {
     return (
       <div className='text-cl'>
-       <Menu ref='menu' onMenuClick={(section) => this.scrollTo(this.positionInfo[section])} />
-       <Banner ref='banner' />
-       <WhoWeAre ref='whoWeAre' />
-       <WhatWeOffer ref='whatWeOffer' />
-       <WhoWeServe ref='whoWeServe' />
-       <Footer onGoTop={() => this.scrollTo(0)} ref='footer' />
+       <Menu ref={MENU} onMenuClick={(section) => this.scrollTo(this.positionInfo[section])} />
+       <Banner ref={BANNER} />
+       <WhoWeAre ref={WHO_WE_ARE} />
+       <WhatWeOffer ref={WHAT_WE_OFFER} />
+       <WhoWeServe ref={WHO_WE_SERVE} />
+       <Footer onGoTop={() => this.scrollTo(0)} ref={FOOTER} />
       </div>
     );
   }
