@@ -17,7 +17,7 @@ class Banner extends Component {
       <div className='banner-part'>
         <Slider autoplay {...settings}>
           {
-            config.items.map(item => <div className='item'>
+            config.items.map((item, idx) => <div className='item' key={idx}>
               <img src={`./img/${item.url}`} />
               <div className='title'>{item.title}</div>
               <div className='sub-title'>{item.subTitle}</div>

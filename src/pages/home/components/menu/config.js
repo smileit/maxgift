@@ -1,16 +1,20 @@
 export default {
   menus: [
     {
-      text: 'WHO WE ARE'
+      text: 'WHO WE ARE',
+      name: 'whoWeAre'
     },
     {
-      text: 'WHAT WE OFFER'
+      text: 'WHAT WE OFFER',
+      name: 'whatWeOffer'
     },
     {
-      text: 'WHO WE SERVE'
+      text: 'WHO WE SERVE',
+      name: 'whoWeServe'
     },
     {
-      text: 'CONTACT'
+      text: 'CONTACT',
+      name: 'footer'
     }
   ]
 }

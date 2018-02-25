@@ -6,7 +6,7 @@ class Fatories extends Component {
     return (
       <div className='factory-pics frw aic jcc'>
         {
-          config.fatoryPics.map(p => <img key={p.src} src={`/img/${p.url}`} />)
+          config.fatoryPics.map(p => <img key={p.url} src={`/img/${p.url}`} />)
         }
       </div>
     );

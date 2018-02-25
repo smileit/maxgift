@@ -21,9 +21,9 @@ class Stories extends Component {
         <h1 className='title main-cl'>THE STORY BEHIND THE STONE</h1>
         <Slider autoplay {...settings}>
           {
-            config.stories.map(item => <div>
+            config.stories.map((item, idx) => <div key={idx}>
               <div className='item df aic'>
-                <img src={`./img/${item.picUrl}`} />
+                <img src={`./img/${item.picUrl}`} alt={item.title} />
                 <div className='fx1 detail'>
                   <h2 className='title'>{item.title}</h2>
                   <div className='text'>{item.text}</div>

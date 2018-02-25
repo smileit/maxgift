@@ -7,7 +7,12 @@ class Menu extends Component {
       <div className='menu-part df aic'>
         <div className='logo fx1'>Logo</div>
         {
-          config.menus.map(m => <div id={m.text} className='item text-cl'>
+          config.menus.map(m => <div
+            id={m.text}
+            key={m.text}
+            onClick={() => this.props.onMenuClick(m.name)}
+            className='item text-cl'
+            >
               {m.text}
             </div>)
         }
