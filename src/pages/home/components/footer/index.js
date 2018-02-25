@@ -18,6 +18,7 @@ class Footer extends Component {
           </div>
           <div className='link col'>
             <div className='title'>CONNECT</div>
+            <div className='social-icons'> <a href="http://www.linkedin.com/in/joyce-han-82a92a128/" target="_blank"><img src={`./img/in.svg`} /></a></div>
           </div>
           <div className='go-top' onClick={this.props.onGoTop}>TOP<span className='arrow-top' /></div>
         </div>
