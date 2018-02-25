@@ -5,7 +5,9 @@ class Menu extends Component {
   render() {
     return (
       <div className='menu-part df aic'>
-        <div className='logo fx1'>Logo</div>
+        <div className='logo fx1'>
+        <img src={`./img/logo.png`} />
+        </div>
         {
           config.menus.map(m => <div
             id={m.text}
@@ -16,7 +18,9 @@ class Menu extends Component {
               {m.text}
             </div>)
         }
-        <div className='email main-cl'>Email</div>
+        <div className='email main-cl'>
+        <a href="mailto:sales1@fuson.cc?subject=I have a enquery" className='email main-cl'>Email us</a>
+        </div>
       </div>
     );
   }
