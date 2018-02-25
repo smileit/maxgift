@@ -33,7 +33,7 @@ class Home extends Component {
     let timer = () => setTimeout(() => {
       if (!tick) return
       tick = tick - 1
-      page.scrollTop += scrollHeight / 5
+      page.scrollTop = tick ? page.scrollTop + scrollHeight / 5 : position
       timer()
     }, 30)
     timer()
