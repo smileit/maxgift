@@ -5,7 +5,9 @@ class Menu extends Component {
   render() {
     return (
       <div className='menu-part df aic'>
-        <div className='logo fx1'>Logo</div>
+        <div className='logo fx1'>
+        <img src={`./img/logo.png`} />
+        </div>
         {
           config.menus.map(m => <div
             id={m.text}
