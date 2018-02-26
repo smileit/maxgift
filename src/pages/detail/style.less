@@ -1,7 +1,6 @@
 .detail-page {
   height: 100vh;
-  padding: 50px 0px;
-  width: 1000px;
+  padding: 50px 100px;
   margin: 0 auto;
   
   .item {
@@ -12,9 +11,61 @@
     }
   }
 
+  .info-part {
+    width: 50%;
+    right: 0;
+    top: 0;
+
+    .title {
+      margin-top: 50px;
+    }
+
+    .discriptions {
+      margin: 20px 0;
+      .triangle {
+        margin-left: 5px; 
+        display: inline-block;
+        width: 0;
+        height: 0;
+        vertical-align: -3px;
+        border-top: 5px solid #fff;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid transparent;
+      }
+      .btn {
+        width: 150px;
+        text-align: center;
+        line-height: 40px;
+        background-color: @mainCl;
+        color: #fff;
+        border-radius: 2px;
+      }
+      cursor: pointer;
+      .text {
+        display: none;
+        background-color: @textCl;
+        color: #fff;
+        max-width: 90%;
+        padding: 30px;
+        max-height: 500px;
+      }
+      &:hover .text {
+        display: block;
+      }
+    }
+
+    .specs {
+      & > div {
+        line-height: 40px;
+      }
+    }
+  }
+
   img {
     display: block;
     max-height: 90%;
+    max-width: 50%;
   }
 
   .slick-dots {
@@ -29,4 +80,9 @@
     }
   }
 
+}
+.not-find {
+  font-size: 48px;
+  text-align: center;
+  line-height: 100vh;
 }

@@ -7,7 +7,7 @@ export default {
       pic: 'p1.jpg'
     },
     {
-      id: 'p001',
+      id: 'p002',
       text: 'pp woven bag',
       pic: 'p2.jpg'
     },
@@ -17,12 +17,12 @@ export default {
       pic: 'p1.jpg'
     },
     {
-      id: 'p001',
+      id: 'p002',
       text: 'cooler bag',
       pic: 'p2.jpg'
     },
     {
-      id: 'p001',
+      id: 'p003',
       text: 'shoulder bag',
       pic: 'p2.jpg'
     },

@@ -18,19 +18,37 @@ class Detail extends Component {
     this.productDetail = data.products.find(i => i.id === this.id)
   }
   render() {
-    if(!this.productDetail) return null
+    if(!this.productDetail) return <div className='max-h not-find'>Product Not Found</div>
+    const { title, specs, discriptions } = this.productDetail
     return (
       <div className='detail-page fcw'>
         <div>Title</div>
-        <Slider {...settings} className='fx1'>
-          {
-            this.productDetail.pics.map((p, idx) => <div className='item' key={idx}>
-            <div className='box df aic'>
-              <img src={`/img/${p}`} />
-            </div>  
-            </div>)
-          }
-        </Slider>
+        <div className='fx1 rel'>
+          <Slider {...settings}>
+            {
+              this.productDetail.pics.map((p, idx) => <div className='item' key={idx}>
+              <div className='box df aic'>
+                <img src={`/img/${p}`} />
+              </div>  
+              </div>)
+            }
+          </Slider>
+          <div className='abs h-max info-part'>
+            <h1 className='title'>{title}</h1>
+            <div className='discriptions rel'>
+              <div className='btn'>Discriptions <span className='triangle' /></div>
+              <div className='abs text'>{discriptions}</div>
+            </div>
+            <div className='specs'>
+              {
+                Object.entries(specs).map(([key, val]) => <div key={key}>
+                  <span className='blod'>{`${key} :  `}</span>
+                  <span>{val}</span>
+                </div>)
+              }
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
