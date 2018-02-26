@@ -18,7 +18,7 @@ class Menu extends Component {
               {m.text}
             </div>)
         }
-        <a className='email main-cl df aic' href="mailto:sales@maxgiftexporter.com?subject=I have a Enquery">
+        <a className='email main-cl df jce' href="mailto:sales@maxgiftexporter.com?subject=I have a Enquery">
           <img src='/img/email.svg' className='email-icon' alt='email icon' />
           <span className='main-cl'>Email us</span>
         </a>
