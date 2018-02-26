@@ -6,7 +6,7 @@ class Menu extends Component {
     return (
       <div className='menu-part df aic'>
         <div className='logo fx1'>
-        <img src={`./img/logo.png`} />
+        <img src={`./img/logo.png`} alt='Maxgiftexporter logo' />
         </div>
         {
           config.menus.map(m => <div
