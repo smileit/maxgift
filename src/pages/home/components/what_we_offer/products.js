@@ -6,7 +6,7 @@ import { openWindow } from '../../../../utils'
 class Products extends Component {
   onItemClick(id) {
     if(!id) return
-    this.props.showPopup()
+    this.props.showPopup(id)
 
   }
   render() {

@@ -3,6 +3,11 @@ import classnames from 'classnames'
 
 class Tab extends Component {
   state = {}
+  componentWillReceiveProps (nextProps) {
+    if(nextProps.key !== this.props.key){
+      this.setState({currentTab: null})
+    }
+  }
   getContent () {
     const { children } = this.props
     const { currentTab } = this.state

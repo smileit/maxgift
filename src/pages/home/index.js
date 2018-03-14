@@ -19,6 +19,7 @@ class Home extends Component {
     super(props)
     this.sections = [MENU, BANNER, WHO_WE_ARE, WHAT_WE_OFFER, WHO_WE_SERVE, FOOTER]
     this.positionInfo = {}
+    this.state = {currentProductId: null}
   }
   componentDidMount () {
     setTimeout(() => {
@@ -42,6 +43,7 @@ class Home extends Component {
     timer()
   }
   showPopup = id => {
+    this.setState({currentProductId: id})
     this.popup.show()
   }
   render() {
@@ -54,7 +56,7 @@ class Home extends Component {
        <WhoWeServe ref={WHO_WE_SERVE} />
        <Footer onGoTop={() => this.scrollTo(0)} ref={FOOTER} />
        <Popup ref={el => { this.popup = el }}>
-        <Details />
+        <Details id={this.state.currentProductId} />
        </Popup>
       </div>
     );
