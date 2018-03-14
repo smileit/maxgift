@@ -1,0 +1,31 @@
+.popup-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  .cover {
+    z-index: -1;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8)
+  }
+  .popup-body {
+    min-width: 400px;
+    min-height: 200px;
+    background-color: white;
+  }
+  .close-icon {
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    color: #ccc;
+    top: -15px;
+    right: -15px;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}

@@ -6,7 +6,7 @@ import { openWindow } from '../../../../utils'
 class Products extends Component {
   onItemClick(id) {
     if(!id) return
-    openWindow(`/detail/${id}`)
+    this.props.showPopup()
 
   }
   render() {
@@ -28,6 +28,10 @@ class Products extends Component {
       </div>
     );
   }
+}
+
+Products.defaultProp = {
+  showPopup: _ => _
 }
 
 export default Products;

@@ -7,7 +7,9 @@ import Footer from './components/footer'
 import WhatWeOffer from './components/what_we_offer'
 import WhoWeAre from './components/who_we_are'
 import WhoWeServe from './components/who_we_serve'
+import Popup from '../components/popup'
 import CONSTS from './consts'
+import Details from './components/product-detail'
 
 const { MENU, BANNER, WHO_WE_ARE, WHAT_WE_OFFER, WHO_WE_SERVE, FOOTER } = CONSTS.SECTION
 
@@ -39,15 +41,21 @@ class Home extends Component {
     }, 30)
     timer()
   }
+  showPopup = id => {
+    this.popup.show()
+  }
   render() {
     return (
       <div className='text-cl'>
        <Menu ref={MENU} onMenuClick={(section) => this.scrollTo(this.positionInfo[section])} />
        <Banner ref={BANNER} />
        <WhoWeAre ref={WHO_WE_ARE} />
-       <WhatWeOffer ref={WHAT_WE_OFFER} />
+       <WhatWeOffer ref={WHAT_WE_OFFER} showPopup={this.showPopup} />
        <WhoWeServe ref={WHO_WE_SERVE} />
        <Footer onGoTop={() => this.scrollTo(0)} ref={FOOTER} />
+       <Popup ref={el => { this.popup = el }}>
+        <Details />
+       </Popup>
       </div>
     );
   }

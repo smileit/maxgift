@@ -9,7 +9,7 @@ class WhatWeOffer extends Component {
   render() {
     return (
       <div className='what-we-offer'>
-        <Products />
+        <Products showPopup={id => this.props.showPopup(id)} />
         <Expertise />
         <Fatories />
         <Stories />
