@@ -1,7 +1,10 @@
 .detail-popup {
   width: 80vw;
+  border-radius: 10px;
+  overflow: hidden;
   .pic-part {
     width: 400px;
+    background-color: #fff;
     .box {
       width: 400px;
       padding: 20px;
@@ -21,5 +24,30 @@
       color: #eee;
       margin: 0;
     }
+  }
+  .tab-cmp {
+    .header {
+      border-bottom: 2px solid #bbb;
+      .tab-icon {
+        background-color: transparent;
+        min-width: 100px;
+        text-align: center;
+        &.active {
+          border-bottom: 2px solid @mainCl;
+          margin-bottom: -2px;
+        }
+      }
+    }
+    .specs {
+      & > div {
+        line-height: 36px;
+      }
+    }
+  }
+  .price {
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+    margin-top: 10px;
   }
 }

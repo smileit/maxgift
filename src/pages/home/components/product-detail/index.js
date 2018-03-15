@@ -17,6 +17,7 @@ class Details extends Component {
     const { id } = this.props
     const productDetail = data.products.find(i => i.id === id)
     if(!id || !productDetail) return null
+    const { price, category, title, subTitle, discriptions} = productDetail
     return (
       <div className='detail-popup df'>
         <div className='pic-part'>
@@ -31,11 +32,22 @@ class Details extends Component {
           </Slider>
         </div>
         <div className='fx1 discription'>
-          <h3 className='main-cl'>{productDetail.category}</h3>
-          <h1 className='product-title'>{productDetail.title}</h1>
+          <h3 className='main-cl'>{category}</h3>
+          <h1 className='product-title'>{title}</h1>
+          <h3 className='sub-title'>{subTitle}</h3>
+          <div className='price'>{price}</div>
           <Tab className='d' key={id}>
-            <div id='apple'>This is apple</div>
-            <div id='bannaner'>This is bannaner</div>
+            <div id='DETAILS'>
+              <div className='specs'>
+                {
+                  Object.entries(productDetail.specs).map(([key, val]) => <div key={key}>
+                    <span className='blod'>{`${key} :  `}</span>
+                    <span className='white'>{val}</span>
+                  </div>)
+                }
+              </div>
+            </div>
+            <div id='DISCRIPTION'>{discriptions}</div>
           </Tab>
         </div>
       </div>
