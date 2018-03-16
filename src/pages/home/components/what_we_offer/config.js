@@ -4,42 +4,42 @@ export default {
     {
       id: 'p001',
       text: 'non woven bag',
-      pic: 'p1.jpg'
+      pic: 'p001.jpg'
     },
     {
       id: 'p002',
       text: 'pp woven bag',
-      pic: 'p2.jpg'
+      pic: 'p002.jpg'
     },
     {
       id: 'p001',
       text: 'pp non woven bag',
-      pic: 'p1.jpg'
+      pic: 'p001.jpg'
     },
     {
       id: 'p002',
       text: 'cooler bag',
-      pic: 'p2.jpg'
+      pic: 'p002.jpg'
     },
     {
-      id: 'p003',
+      id: 'p001',
       text: 'shoulder bag',
-      pic: 'p2.jpg'
+      pic: 'p002.jpg'
     },
     {
       id: 'p001',
       text: 'PET bag',
-      pic: 'p1.jpg'
+      pic: 'p001.jpg'
     },
     {
       id: 'p001',
       text: 'Drawstring bag',
-      pic: 'p1.jpg'
+      pic: 'p001.jpg'
     },
     {
       id: 'p001',
       text: 'ice bag',
-      pic: 'p1.jpg'
+      pic: 'p001.jpg'
     }
   ],
   experitise: {
@@ -81,17 +81,17 @@ export default {
   ],
   stories: [
     {
-      picUrl: 'p1.jpg',
+      picUrl: 'p001.jpg',
       title: 'quarz',
       text: 'The design of your next stone or tile project is already well underway. It’s a process that began millions of years ago, miles beneath the surface of the earth. We take over where nature leaves off, importing the finest natural stone and porcelain tile from around the globe and continuing its millennia-long process of formation. Like the origins of the products we offer.'
     },
     {
-      picUrl: 'p2.jpg',
+      picUrl: 'p002.jpg',
       title: 'quarz',
       text: 'The design of your next stone or tile project is already well underway. It’s a process that began millions of years ago, miles beneath the surface of the earth. We take over where nature leaves off, importing the finest natural stone and porcelain tile from around the globe and continuing its millennia-long process of formation. Like the origins of the products we offer.'
     },
     {
-      picUrl: 'p1.jpg',
+      picUrl: 'p001.jpg',
       title: 'quarz',
       text: 'The design of your next stone or tile project is already well underway. It’s a process that began millions of years ago, miles beneath the surface of the earth. We take over where nature leaves off, importing the finest natural stone and porcelain tile from around the globe and continuing its millennia-long process of formation. Like the origins of the products we offer.'
     }

@@ -6,7 +6,7 @@ export default {
       subTitle: "Tinner's House",
       category: 'Bags',
       price: '$10 ~ $30',
-      pics: ['p1.jpg', 'p2.jpg', 'c3.png'],
+      pics: ['p001.jpg', 'p002.jpg', 'c3.png'],
       specs: {
         'Weight': '300g',
         'Matirial': 'PP',
@@ -21,7 +21,7 @@ export default {
     {
       id: 'p002',
       title: 'PP-Gig-bag222222',
-      pics: ['p1.jpg', 'p2.jpg', 'c3.png'],
+      pics: ['p001.jpg', 'p002.jpg', 'c3.png'],
       specs: {
         'Weight': '300444g',
         'Matirial': 'PP222',
