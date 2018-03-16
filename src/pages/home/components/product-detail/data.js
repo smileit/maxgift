@@ -10,9 +10,13 @@ export default {
       specs: {
         'Weight': '300g',
         'Matirial': 'PP',
-        'Style': 'Freedom'
+        'Style': 'Freedom',
+        'Height': '60px',
+        'Col': 'Duroo Fiell',
+        'Folu': 'Tested'
       },
-      discriptions: 'Img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.'
+      discriptions: 'Img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.',
+      packaging_shipping: 'FOB NingBo'
     },
     {
       id: 'p002',
@@ -23,7 +27,8 @@ export default {
         'Matirial': 'PP222',
         'Style': 'Freedom222'
       },
-      discriptions: 'Img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.'
+      discriptions: 'Img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.',
+      packaging_shipping: 'FOB NingBo'
     }
   ]
 }
