@@ -21,14 +21,14 @@ class Home extends Component {
     this.positionInfo = {}
     this.state = {currentProductId: null}
   }
-  componentDidMount () {
-    setTimeout(() => {
-      this.positionInfo = this.sections.reduce((acc, section) => {
-        const sectionNode = findDOMNode(this.refs[section]).getBoundingClientRect()
-        return {...acc, last: (+acc.last) + sectionNode.height, [section]: acc.last}
-      }, {last: 0})
-    }, 1000)
+
+  getPositionInfo () {
+    return this.sections.reduce((acc, section) => {
+      const sectionNode = findDOMNode(this.refs[section]).getBoundingClientRect()
+      return {...acc, last: (+acc.last) + sectionNode.height, [section]: acc.last}
+    }, {last: 0})
   }
+  getSectionPosition = section => this.getPositionInfo()[section]
   scrollTo (position) {
     const page = document.getElementsByTagName('html')[0]
     const body = document.getElementsByTagName('body')[0]
@@ -49,7 +49,7 @@ class Home extends Component {
   render() {
     return (
       <div className='text-cl'>
-       <Menu ref={MENU} onMenuClick={(section) => this.scrollTo(this.positionInfo[section])} />
+       <Menu ref={MENU} onMenuClick={(section) => this.scrollTo(this.getSectionPosition(section))} />
        <Banner ref={BANNER} />
        <WhoWeAre ref={WHO_WE_ARE} />
        <WhatWeOffer ref={WHAT_WE_OFFER} showPopup={this.showPopup} />
