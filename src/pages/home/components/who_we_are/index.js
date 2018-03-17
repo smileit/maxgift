@@ -9,7 +9,7 @@ class WhoWeare extends Component {
       <div className='who-we-are bg'>
         <TitleBlock title='WHO WE ARE' theme='white' />
         <h1 className='title main-cl'>{config.title}</h1>
-        <p className='text'>{config.detail}</p>
+        <p className='text' dangerouslySetInnerHTML={{__html: config.detail}} />
       </div>
     );
   }
