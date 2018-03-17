@@ -21,7 +21,7 @@ class Details extends Component {
     return (
       <div className='detail-popup df'>
         <div className='pic-part'>
-          <Slider {...settings}>
+          <Slider {...settings} key={id}>
             {
               productDetail.pics.map((p, idx) => <div className='item' key={idx}>
               <div className='box df aic'>
