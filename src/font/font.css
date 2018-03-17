@@ -1,7 +1,9 @@
 @font-face {
-  font-family: 'En type';
+  font-family: 'Entype';
   font-style: normal;
   font-weight: 400;
-  src: local('En type'), local('En type'),
-       url('./2CF2F2_1_0.woff2') format('woff2'), /* Super Modern Browsers */
+  src: url('./2CF2F2_1_0.woff2');
+  src: url('./2FBA1B_0_0.woff2');
+  src: url('./2FBA1B_1_0.woff2');
+  src: url('./2CF2F2_1_0.woff2') format('truetype'); /* Super Modern Browsers */
 }
