@@ -20,7 +20,7 @@ class Menu extends Component {
         }
         <a className='email main-cl df jce' href="mailto:sales@maxgiftexporter.com?subject=I have a Enquery">
           <img src='/img/email.svg' className='email-icon' alt='email icon' />
-          <span className='main-cl'>Email us</span>
+          <span className='main-cl' style={{marginTop: '3px'}}>Email us</span>
         </a>
       </div>
     );
